@@ -16,7 +16,7 @@ process.on('SIGINT', () => {
 });
 
 stdin.on('data', data =>{
-  if(data.toString().trim() === '.exit'){
+  if(data.toString().trim() === 'exit'){
     console.log('Goodbye!');
     process.exit();
   }else{
